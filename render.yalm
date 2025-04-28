@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: steve-assistant
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: OLLAMA_URL
+        value: https://evaenespanol.loca.lt/api/chat
+      - key: MODEL_NAME
+        value: llama3:8b
+      - key: TTS_VOICE
+        value: es-MX-JorgeNeural
+      - key: TTS_RATE
+        value: +0%
+      - key: TTS_VOLUME
+        value: +0%
