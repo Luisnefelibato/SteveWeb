@@ -9,7 +9,7 @@ from threading import Lock
 app = Flask(__name__)
 
 # Configuración de la API de Ollama
-OLLAMA_URL = os.environ.get("OLLAMA_URL", "https://evaenespanol.loca.lt/api/chat")
+OLLAMA_URL = os.environ.get("OLLAMA_URL", "https://evaenespanol.loca.lt")
 MODEL_NAME = os.environ.get("MODEL_NAME", "llama3:8b")
 
 # Configuración de voz Edge TTS
