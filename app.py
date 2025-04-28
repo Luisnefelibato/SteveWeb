@@ -5,9 +5,10 @@ import os
 import asyncio
 import edge_tts
 from threading import Lock
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 # Configuración de la API de Ollama
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "https://evaenespanol.loca.lt")
 MODEL_NAME = os.environ.get("MODEL_NAME", "llama3:8b")
