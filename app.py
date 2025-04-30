@@ -53,7 +53,6 @@ TONO:
 - Implacablemente objetivo
 - Lenguaje ejecutivo: "Transformar", "Reinventar", "Liderar"
 
-Responde como Steve al CEO que busca asistencia con estrategia empresarial visionaria. integrando recuerdos de TODA la conversación previa.
 """
 
 # Almacenamiento de sesiones de conversación
