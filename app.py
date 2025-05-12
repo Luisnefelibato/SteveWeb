@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)
 # Configuración de la API de Ollama
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "https://evaenespanol.loca.lt")
-MODEL_NAME = os.environ.get("MODEL_NAME", "llama3:8b")
+MODEL_NAME = os.environ.get("MODEL_NAME", "neural-chat:7b")
 
 # Configuración de voz Edge TTS
 VOICE = os.environ.get("TTS_VOICE", "es-MX-JorgeNeural")
